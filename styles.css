@@ -1,0 +1,27 @@
+/* styles.css */
+@import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css";
+
+/* Custom colors for buttons and hover effects */
+.bg-blue-600 {
+    background-color: #0077b6;
+}
+
+.text-blue-600 {
+    color: #0077b6;
+}
+
+.hover\:bg-orange-500:hover {
+    background-color: #ff6600;
+}
+
+.hover\:text-orange-500:hover {
+    color: #ff6600;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
