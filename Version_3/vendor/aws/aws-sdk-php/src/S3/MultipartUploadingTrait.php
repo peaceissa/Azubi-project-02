@@ -51,14 +51,10 @@ trait MultipartUploadingTrait
 
     protected function handleResult(CommandInterface $command, ResultInterface $result)
     {
-        $partData = [];
-        $partData['PartNumber'] = $command['PartNumber'];
-        $partData['ETag'] = $this->extractETag($result);
-        if (isset($command['ChecksumAlgorithm'])) {
-            $checksumMemberName = 'Checksum' . strtoupper($command['ChecksumAlgorithm']);
-            $partData[$checksumMemberName] = $result[$checksumMemberName];
-        }
-        $this->getState()->markPartAsUploaded($command['PartNumber'], $partData);
+        $this->getState()->markPartAsUploaded($command['PartNumber'], [
+            'PartNumber' => $command['PartNumber'],
+            'ETag'       => $this->extractETag($result),
+        ]);
     }
 
     abstract protected function extractETag(ResultInterface $result);
@@ -106,8 +102,8 @@ trait MultipartUploadingTrait
             $params['ACL'] = $config['acl'];
         }
 
-        // Set the ContentType if not already present
-        if (empty($params['ContentType']) && $type = $this->getSourceMimeType()) {
+        // Set the content type
+        if ($type = $this->getSourceMimeType()) {
             $params['ContentType'] = $type;
         }
 

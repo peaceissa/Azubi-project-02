@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+        <h2 class="text-2xl font-bold mb-5 text-center">Login</h2>
+        <form action="guestlist.php">
+            <input type="text" name="username" placeholder="Username" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
+            <input type="password" name="password" placeholder="Password" class="w-full p-3 mb-4 border border-gray-300 rounded" required>
+            <button type="submit" class="w-full p-3 bg-green-500 text-white rounded hover:bg-green-600">Login</button>
+        </form>
+        <div class="text-center mt-4">
+            <a href="signup.html" class="text-blue-500 hover:underline">Don't have an account? Sign up</a>
+        </div>
+    </div>
+</body>
+</html>

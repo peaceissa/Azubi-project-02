@@ -52,11 +52,11 @@ cd repo_name
 
 ## Collaborations
 
-This project was a collaborative effort by the Azubi Africa Cloud Team in 2023, including:
-- William Mukoyani [@their_linkedin]
-- Esther Awudu [@their_linkedin]
-- Thelma Laryea [@their_linkedin]
-- Sampson Boamah [@their_linkedin]
+This project was a collaborative effort by the Azubi Africa Cloud Team in 2024, including:
+- Nicholina Owusu Acheaw [noacheaw18@gmail.com]
+- Benson Gathu [bensongathu23@gmail.com]
+- Baldwin Kpodo [Baldwinkpodo@gmail.com]
+- Sandra Wettey [sandraawuradwoa143@gmail.com]
 
 ## Contact
 
@@ -67,8 +67,7 @@ Project Link: [GitHub Repository](https://github.com/peaceissa/Azubi-project-02)
 ## References
 
 - [GitHub Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
-- [Malven's Flexbox Cheatsheet](https://malven.co/)
-- [Malven's Grid Cheatsheet](https://malven.co/grid/)
-- [Img Shields](https://shields.io/)
+- [Terraform DynamDB Docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table)
+- [AWS Documetation](https://docs.aws.amazon.com/)
 - [GitHub Pages](https://pages.github.com/)
 
