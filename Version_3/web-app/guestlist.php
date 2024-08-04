@@ -39,8 +39,8 @@
           'region'   => 'eu-central-1',
           'version'  => 'latest',
           'credentials' => [
-              'key'    => 'AKIA5FTZFOIZAQZY7GGS',
-              'secret' => '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',
+              'key'    => '#',
+              'secret' => '#',
           ]
       ]);
  
